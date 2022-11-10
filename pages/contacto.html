@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contacto </title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <header>
+        <!-- Esta es la barra de Navegación -->
+      <nav class="topnav">
+          <a href="../index.html">Home</a>
+          <a href="../pages/nosotros.html" target="_blank">Nuestro Equipo</a>
+          <a href="../pages/productos.html" target="_blank">Productos</a>
+          <a href="../pages/contacto.html" target="_blank" class="active">Contacto</a>
+          <a href="../pages/enlaces.html" target="_blank">Enlaces Útiles</a>
+      </nav> <br> <br>
+    </header>
+
+    <div class="container" style="text-align: center;">
+        <div>
+            <h1>Contactános</h1>
+            <P> Acercáte, te invitamos un café o podés dejarnos un mensaje que nos vamos a poner en contácto con vos!</P>
+        </div>
+    </div>
+    <div class="row">
+        <div class="columnContact">
+            <img src="../img/citi-contacto.jpg" style="width:100%" alt="City image">
+        </div>
+        <div class="columnContact">
+            <form action="action.php" method="post" enctype="multipart/form-data">
+      
+                <label for="fname">Tu nombre</label>
+                <input type="text" id="fname" name="firstname" placeholder="María" autofocus>
+
+                <label for="lname">Apellido</label>
+                <input type="text" id="lname" name="lastname" placeholder="González">
+
+                <label for="country">País</label>
+                    <select id="country" name="country">
+                        <option value="argentina">Argentina</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="usa">USA</option>
+                        <option value="other">Otro</option>
+                    </select>
+      
+                <label for="subject">Tu mensaje</label>
+
+                <textarea id="subject" name="subject" placeholder="Aquí escribinos tu consulta!" style="height:200px"></textarea>
+      
+                <input type="submit" value="Submit">
+            </form>
+        </div> 
+    </div>
+
+
+    <footer>
+    <p> ©Copyright 2022 by <a href="https://www.linkedin.com/in/marioexequielcampos/" target="_blank">mex</a>. All rights reversed.</p>
+    </footer>
+</body>
+</html>
